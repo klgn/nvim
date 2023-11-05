@@ -11,7 +11,7 @@ return {
         theme = "catppuccin",
       },
       sections = {
-        lualine_a = {
+        lualine_b = {
           {
             'buffers',
             show_filename_only = true,   -- Shows shortened relative path when set to false.
