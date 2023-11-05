@@ -4,6 +4,9 @@ return {
   init = function()
     vim.o.timeout = true
     vim.o.timeoutlen = 500
+    local keymap = vim.keymap
+
+    keymap.set("n", "<leader>wk", "<cmd> WhichKey<CR>")
   end,
   opts = {
     -- your configuration comes here
