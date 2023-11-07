@@ -10,8 +10,11 @@ return {
       options = {
         theme = "catppuccin",
       },
-      sections = {
-        lualine_b = {
+      extensions = {
+        'nvim-tree',
+      },
+      tabline = {
+        lualine_a = {
           {
             'buffers',
             show_filename_only = true,   -- Shows shortened relative path when set to false.
@@ -33,6 +36,10 @@ return {
             },
           },
         },
+      },
+      sections = {
+        lualine_b = {},
+        lualine_c = {},
         lualine_x = {
           {
             lazy_status.updates,
@@ -43,7 +50,7 @@ return {
           { "fileformat" },
           { "filetype" },
         },
-      }
+      },
     })
   end,
 }
