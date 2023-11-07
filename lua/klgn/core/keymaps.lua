@@ -8,6 +8,7 @@ keymap.set("i", "<C-j>", "<Down>", { desc = "Move down" })
 keymap.set("i", "<C-k>", "<Up>", { desc = "Move up" })
 
 keymap.set("n", "<TAB>", ":bn <CR>", { desc = "Next buffer" })
-keymap.set("n", "<C-x>", ":bd <CR>", { desc = "Close buffer" })
+keymap.set("n", "<S-x>", ":bd <CR>", { desc = "Close buffer" })
+keymap.set("n", "<leader>n", "<cmd> enew <CR>", { desc = "Open new buffer" })
 
 keymap.set("n", "<C-s>", "<cmd> w <CR>", { desc = "Save file" })
