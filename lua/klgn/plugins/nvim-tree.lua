@@ -15,22 +15,47 @@ return {
     -- configure nvim-tree
     nvimtree.setup({
       view = {
-        width = 35,
-        relativenumber = true,
+        width = 30,
+        relativenumber = false,
+        number = false,
+        cursorline = false,
       },
-      -- change folder arrow icons
+      git = {
+        enable = false,
+        ignore = true,
+      },
       renderer = {
+        root_folder_label = false,
+        highlight_git = false,
+        highlight_opened_files = "none",
         indent_markers = {
-          enable = true,
+          enable = false,
         },
-        icons = {
-          glyphs = {
-            folder = {
-              arrow_closed = "", -- arrow when folder is closed
-              arrow_open = "", -- arrow when folder is open
-            },
+      icons = {
+        glyphs = {
+          default = "󰈚",
+          symlink = "",
+          folder = {
+            default = "",
+            empty = "",
+            empty_open = "",
+            open = "",
+            symlink = "",
+            symlink_open = "",
+            arrow_open = "",
+            arrow_closed = "",
+          },
+          git = {
+            unstaged = "✗",
+            staged = "✓",
+            unmerged = "",
+            renamed = "➜",
+            untracked = "★",
+            deleted = "",
+            ignored = "◌",
           },
         },
+      },
       },
       -- disable window_picker for
       -- explorer to work well with
@@ -44,9 +69,6 @@ return {
       },
       filters = {
         custom = { ".DS_Store" },
-      },
-      git = {
-        ignore = false,
       },
     })
 
