@@ -38,7 +38,7 @@ return {
         },
       },
       sections = {
-        lualine_b = {},
+        lualine_b = {'branch'},
         lualine_c = {},
         lualine_x = {
           {
