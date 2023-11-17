@@ -137,6 +137,15 @@ return {
       on_attach = on_attach,
     })
 
+    lspconfig["phpactor"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+      init_options = {
+        ["language_server_phpstan.enable"] = false,
+        ["language_server_psalm.enable"] = false,
+      }
+    })
+
     -- configure lua server (with special settings)
     lspconfig["lua_ls"].setup({
       capabilities = capabilities,

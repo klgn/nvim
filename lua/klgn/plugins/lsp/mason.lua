@@ -29,6 +29,7 @@ return {
       ensure_installed = {
         "pyright",
         "lua_ls",
+        "phpactor"
       },
       -- auto-install configured servers (with lspconfig)
       automatic_installation = true, -- not the same as ensure_installed
@@ -43,6 +44,8 @@ return {
         "black", -- python formatter
         "mypy",
         "pylint", -- python linter
+        "php-cs-fixer",
+
       },
     })
   end,
