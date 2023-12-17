@@ -146,6 +146,13 @@ return {
       }
     })
 
+    lspconfig["marksman"].setup({
+      filetypes = { "markdown", "markdown.mdx" },
+      autostart = true,
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
     -- configure lua server (with special settings)
     lspconfig["lua_ls"].setup({
       capabilities = capabilities,

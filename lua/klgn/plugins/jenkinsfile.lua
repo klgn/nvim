@@ -1,3 +1,4 @@
 return {
-  "martinda/jenkinsfile-vim-syntax"
+  "martinda/jenkinsfile-vim-syntax",
+  ft = "Jenkinsfile",
 }

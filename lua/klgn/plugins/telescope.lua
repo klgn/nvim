@@ -1,5 +1,10 @@
 return {
   "nvim-telescope/telescope.nvim",
+  event = { 'BufReadPre', 'BufNewFile' },
+  keys = {
+    { "<leader>ff", mode = { "n" }, function() require("telescope").find_files() end, desc = "Telescope find files" },
+    { "<leader>fs", mode = { "n" }, function() require("telescope").live_grep() end, desc = "Telescope Live Grep" },
+  },
   branch = "0.1.x",
   dependencies = {
     "nvim-lua/plenary.nvim",

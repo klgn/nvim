@@ -1,3 +1,4 @@
 return {
-  "tpope/vim-speeddating"
+  "tpope/vim-speeddating",
+  event = { 'BufReadPre', 'BufNewFile' },
 }

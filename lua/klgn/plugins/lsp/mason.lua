@@ -29,6 +29,7 @@ return {
       ensure_installed = {
         "pyright",
         "lua_ls",
+        "marksman",
         "phpactor"
       },
       -- auto-install configured servers (with lspconfig)
